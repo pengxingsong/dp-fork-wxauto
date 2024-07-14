@@ -46,5 +46,5 @@ class GPT:
             seed=random.randint(0, 1000)
         )
         reply = response.choices[0].message.content
-        self.messages.append({"role": "assistant", "content": reply})
+        self.messages.append({"role": "user", "content": reply})
         return reply
